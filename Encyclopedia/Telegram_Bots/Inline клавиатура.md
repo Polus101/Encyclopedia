@@ -67,7 +67,7 @@ InlineKeyboardButton(
 ## Обработка нажатий
 Обработка нажатий тоже очень похожая. Чуть чуть меняется декоратор и аргумент функции с `message` на `callback`
 ```python
-from aiogram.types import 
+from aiogram.types import CallbackQuery
 
 @router.callback_query(F.data == "btn1")
 async def handle_btn1(callback: CallbackQuery):
