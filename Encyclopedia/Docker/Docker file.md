@@ -98,7 +98,7 @@ WORKDIR /my_super_project
 # Устанавливаем для python рабочую корневую папку проекта, чтобы 
 # нормально работали импорты (это необязательно - и без этого будет 
 # работать, но так можно запускать контейнер любым удобным способом)
-ENV PYTHONPATH=/my_project
+ENV PYTHONPATH=/my_super_project
 
 COPY requirements.txt .
 
