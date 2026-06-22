@@ -53,7 +53,7 @@ file_operations.render_template("template.txt", "result.txt", context)
 
 Например, есть такая картинка `template.svg`:
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/file_operations_1.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/file_operations_1.png)
 
 Её тоже можно преобразовать:
 ```python3
@@ -69,7 +69,7 @@ file_operations.render_template("template.svg", "result.svg", context)
 ```
 Получится новая картинка:
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/file_operations_2.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/file_operations_2.png)
 
 ## Пути к файлам
 

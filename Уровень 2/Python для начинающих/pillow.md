@@ -106,11 +106,11 @@ print(image.mode)  # Вывелось RGB
 
 За обрезание картинки отвечает метод `.crop()`. Он принимает на вход кортеж из 4 чисел: координат углов новой картинки. Координаты отсчитываются с левого верхнего угла картинки:
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_1.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_1.png)
 
 Координаты нужно передать в таком порядке: слева, сверху, справа, снизу. Например, вы хотите отрезать 10 пикселей слева и 15 сверху:
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_2.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_2.png)
 
 Пример:
 ```python
@@ -125,7 +125,7 @@ cropped = image.crop(coordinates)  # Отрежется 10 пикселей сл
 
 # <a name="#split"></a> Разделить картинку на каналы
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_3.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_3.png)
 
 Картинки состоят из пикселей разных цветов. Каждый пиксель картинки в RGB состоит из 3 значений: сколько в нём красного, сколько зелёного и сколько синего. А в цветовой схеме CMYK из четырёх: голубой, пурпурный, жёлтый и чёрный. Все значения от 0 до 255. 0 — нет такого цвета, а 255 — его очень-очень много.
 
@@ -144,7 +144,7 @@ cyan, magenta, yellow, key_color = image.split()  # В переменные за
 
 # <a name="#merge"></a> Собрать картинку из каналов
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_4.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_4.png)
 
 `Pillow` позволяет [разделять картинку на каналы](#-разделить-картинку-на-каналы). Но так же позволяет и собирать её обратно. За это отвечает функция `Image.merge()`. Она принимает на вход 2 аргумента:
 
@@ -184,11 +184,11 @@ colorized = ImageOps.colorize(image, "black", "blue")
 
 Метод `resize` приводит картинку к желаемому размеру **без сохранения пропорций**. Картинка жмётся, становится некрасивой:
 
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_5.gif" style="max-width:30%;max-height:50%;">
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_5.gif" style="max-width:30%;max-height:50%;">
 
 Метод `thumbnail` **сохраняет пропорции**:
 
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_6.gif" style="max-width:30%;max-height:50%;">
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_6.gif" style="max-width:30%;max-height:50%;">
 
 ### Подробнее о thumbnail
 
@@ -222,7 +222,7 @@ image3 = Image.blend(image1, image2, 0.5)  # Получится картинка
 
 # <a name="#blend&crop"></a> Наложить со смещением
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/pillow_7.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python%20для%20начинающих/img/pillow_7.png)
 
 Отдельного метода для этого нет, но получается за счёт комбинации [.crop()](#-обрезать-картинку) и [Image.blend()](#-наложить-картинки-друг-на-друга).
 
