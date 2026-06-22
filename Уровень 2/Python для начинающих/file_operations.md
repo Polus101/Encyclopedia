@@ -4,7 +4,7 @@
 
 ## Как установить
 
-Скопируйте к себе файл [file_operations.py](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python/Lesson%205/file_operations.py).
+Скопируйте к себе файл [file_operations.py](https://github.com/Polus101/Resources/blob/main/Python/Lesson%205/file_operations.py).
 
 Сразу проверьте работу этого модуля. Подлючите `file_operations.py` к своей программе и попробуйте вывести его версию:
 
