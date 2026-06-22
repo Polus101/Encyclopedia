@@ -13,7 +13,7 @@
 **Эти мини-виртуальные машины и есть контейнеры**
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/container.png" style="width:30%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/container.png" style="width:30%"/>
 </p>
 
 *Контейнеры так же максимально оптимизированы - например, все контейнеры используют общее ядро и дисковое пространство вместо эмуляции отдельно для каждого контейнера*
@@ -28,7 +28,7 @@
 Именно он, как невидимый дирижер, управляет всем
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/daemon.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/daemon.png" style="width:60%"/>
 </p>
 
 ## Docker Client
@@ -37,7 +37,7 @@
 Например, создать для Вас новый контейнер)
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/client.png" style="width:50%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/client.png" style="width:50%"/>
 </p>
 
 
@@ -45,7 +45,7 @@
 Docker Desktop - то, что Вы больше всего видите перед глазами - это `программа для работы с Docker`.
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/desktop_real.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/desktop_real.png" style="width:60%"/>
 </p>
 
 Помимо того, что это Ваш графический интерфейс, это еще и минималистичная виртуальная машина Linux.
@@ -53,7 +53,7 @@ Docker Desktop - то, что Вы больше всего видите пере
 Дело в том, что Docker работает только под Linux, поэтому, если вы работаете на Windows, Docker Desktop приходится создавать виртуалку Linux для своей работы. Именно это и происходит, когда Вы запускаете программу - Вы видите сообщение `Running Docker Engine` - значит, запускаются все компоненты, включая виртуалку Linux
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/desktop.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/desktop.png" style="width:60%"/>
 </p>
 
 
@@ -61,7 +61,7 @@ Docker Desktop - то, что Вы больше всего видите пере
 Докер хостом называют машину, на которой работает докер. То есть `Ваш компьютер`! Ну или `сервер`, на котором вы запустите свой сайт, бота или любой другой сервис
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/host.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/host.png" style="width:60%"/>
 </p>
 
 
@@ -75,7 +75,7 @@ Docker Image переводится как докер образ. И это де
 *На основе одного образа (шаблона) можно создавать сколько угодно контейнеров, что достаточно удобно*
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/image.png" style="width:80%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/image.png" style="width:80%"/>
 </p>
 
 ## Docker Repository
@@ -87,8 +87,8 @@ Docker Image переводится как докер образ. И это де
 Самое популярное облако для Git - это GitHub. Ну а для Docker - это `DockerHub`.
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/rep.png"/>
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Docker/img/rep2.png"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/rep.png"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Docker/img/rep2.png"/>
 </p>
 
 **Вот и все! Это финальная схема работы Docker**

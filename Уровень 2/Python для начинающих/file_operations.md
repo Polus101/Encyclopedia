@@ -4,7 +4,7 @@
 
 ## Как установить
 
-Скопируйте к себе файл [file_operations.py](https://github.com/Polus101/Encyclopedia/blob/master/Python/Lesson%205/file_operations.py).
+Скопируйте к себе файл [file_operations.py](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python/Lesson%205/file_operations.py).
 
 Сразу проверьте работу этого модуля. Подлючите `file_operations.py` к своей программе и попробуйте вывести его версию:
 
@@ -53,7 +53,7 @@ file_operations.render_template("template.txt", "result.txt", context)
 
 Например, есть такая картинка `template.svg`:
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/file_operations_1.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/file_operations_1.png)
 
 Её тоже можно преобразовать:
 ```python3
@@ -69,7 +69,7 @@ file_operations.render_template("template.svg", "result.svg", context)
 ```
 Получится новая картинка:
 
-![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/file_operations_2.png)
+![sample_text](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/file_operations_2.png)
 
 ## Пути к файлам
 

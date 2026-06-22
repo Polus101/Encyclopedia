@@ -8,7 +8,7 @@
 ## Покраска текста
 Начнём с простого вывода в консоль. Так выглядит обычный, не покрашенный текст:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_1.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_1.png)
 
 Чтобы покрасить текст, нужно в придачу вывести пару ANSI-кодов. Вот два ваших первых ANSI-кода:
 
@@ -16,13 +16,13 @@
 Вернуть как было: `\u001b[0m`
 Вот как их применять:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_2.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_2.png)
 
 Покрасилась не только фраза `Hello, World!`, но и всё что под ней. На первой строчке терминал получил команду “Теперь выводи всё красным”. Дальше он выводил весь текст красным, пока не получил команду “Верни как было”: `\u001b[0m`.
 
 Чтобы получилось аккуратно, лучше ставить команду “Верни как было” сразу после фразы:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_3.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_3.png)
 
 С этим разобрались, а как ещё можно красить? У большинства терминалов есть 8 базовых цветов:
 
@@ -38,7 +38,7 @@
 | Белый           | `\u001b[37m`    |
 | **Сброс цвета** | `\u001b[0m`     |
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_colors.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_colors.png)
 
 Чтобы сделать цвет ярче, можно прибавить к коду ;1. Получается ещё 8 цветов:
  Например, яркий красный: `\u001b[31;1m`
@@ -46,7 +46,7 @@
 ### Все цвета
 Всего в ANSI 256 цветов. Они составляются так: `\u001b[38;5;КОДm`, где вместо КОД — число от 0 до 255:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_all_colors.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_all_colors.png)
 
 ## Покраска фона
 Работает так же, только коды другие:
@@ -66,18 +66,18 @@
 
 Либо можно собрать один из 256 доступных по схеме \u001b[48;5;КОДm, где вместо КОД — число от 0 до 255:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_all_bgg.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_all_bgg.png)
 
 ## Навигация курсора
 Курсор – это вот эта “мигающая палочка”, откуда набирается текст:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/coursor.gif)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/coursor.gif)
 
 Если продолжить набирать текст в примере выше, то он будет набираться между словами “вот” и “эта”.
 
 Вывод в терминале тоже набирает “курсор”. Вот как он выглядит:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/coursor.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/coursor.png)
 
 Вы можете двигать обычный курсор просто кликнув мышью в нужное место. В терминале так не получится, для этого есть отдельные ANSI-коды::
 | **Направление** | **Код**         |
@@ -89,19 +89,19 @@
 
 Вместо `ШАГ` нужно подставить нужное число, например, `\u001b[10A` — переведёт курсор на 10 строк вверх. Вот так это выглядит:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/ansi_jumps.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/ansi_jumps.png)
 
 Мы вывели код, который поднимает курсор терминала на 4 строчки вверх. Поэтому следующий текст вывелся поверх того, что уже был выведен на третьей строчке.
 
 Заметьте, что сам курсор в итоге оказался на следующей строке. Дело тут в том, что `print` добавляет перенос строки:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/print.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/print.png)
 
 Каждый новый принт выводит строку, потом ставит перенос строки. Если выводить нечего, он выводит только перенос строки.
 
 Это можно отключить:
 
-![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Python для начинающих/img/disable_print.png)
+![alt-текст](https://github.com/Polus101/Encyclopedia/blob/master/Уровень%202/Python для начинающих/img/disable_print.png)
 
 Теперь первый `print()` перенос не вывел, курсор не сдвинулся вниз, поэтому вторая строка вывелась прямо следом за первой же.
 

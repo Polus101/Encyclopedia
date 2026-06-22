@@ -12,7 +12,7 @@
 **Рассмотрите несколько схем:**
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/error_1.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/error_1.png" style="width:60%"/>
 </p>
 
 - Бот по какой то причине остановился после сохранения данных в бд. 
@@ -24,7 +24,7 @@
 <hr></hr>
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/error_2.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/error_2.png" style="width:60%"/>
 </p>
 
 Если бот остановится между сбросом `state` и выводом сообщения ситуация будет идентичная (так как `state` все равно обнулится при повторном запуске - эта сточка здесь не играет роли)
@@ -34,7 +34,7 @@
 <hr></hr>
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/error_3.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/error_3.png" style="width:60%"/>
 </p>
 
 
@@ -55,7 +55,7 @@
 А внутрення работа в хэндлере будет выглядеть следующим образом:
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/error_4.png" style="width:60%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/error_4.png" style="width:60%"/>
 </p>
 
 Теперь, состояние пользователя будет храниться в БД, а **(запись данных в бд и обнуление state - последнее действие в функции)** При возникновении сбоя, после запуска бота мы получим на первый взгляд ужасную ситуацию:
@@ -72,7 +72,7 @@
 Тогда схема будет следующая:
 
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/error_5.png" style="width:80%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/error_5.png" style="width:80%"/>
 </p>
 
 При таком подходе в худшем случае после сбоя пользователь просто получит дубликат сообщения `"Регистрация завершена"` и увидит все те же кнопки главного меню

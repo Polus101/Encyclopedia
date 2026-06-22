@@ -4,7 +4,7 @@
 
 Вот пример такой клавиатуры:
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/reply_btns.png" style="width:40%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/reply_btns.png" style="width:40%"/>
 </p>
 
 
@@ -31,7 +31,7 @@ resize_keyboard=True)
 ```
 Этот код создаст следующую клавиатуру:
 <p align="center">
-<img src="https://github.com/Polus101/Encyclopedia/blob/master/Telegram_Bots/img/reply_btns2.png" style="width:40%"/>
+<img src="https://github.com/Polus101/Encyclopedia/blob/master/Уровень%204/Telegram_Bots/img/reply_btns2.png" style="width:40%"/>
 </p>
 
 Здесь мы видим, что клавиатура - это объект класса `ReplyKeyboardMarkup`, в котором указано два аргумента:
