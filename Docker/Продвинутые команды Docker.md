@@ -84,6 +84,11 @@ docker network create my-site-network
 docker network ls
 ```
 
+Просмотреть подробную информацию по конкретной сети:
+```
+docker network inspect my-site-network
+```
+
 Удалить сеть:
 ```
 docker network rm my-site-network
